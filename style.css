@@ -14,8 +14,21 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    
+    /* Alteração: permite que a página tenha rolagem */
+    overflow-x: hidden;
+    overflow-y: auto;
+
     position: relative;
+
+    /* Novo: organiza os elementos um abaixo do outro */
+    flex-direction: column;
+
+    /* Novo: cria espaço entre o crtão e a nova seção */
+    gap: 60px;
+
+    /* Novo: adiciona espaçamento nas bordas da página */
+    padding: 80px 20px;
 }
 
 body::before, body::after {
